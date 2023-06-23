@@ -19,7 +19,7 @@ app.get('/correos', async (req, res) => {
     from: `Epsaind Developer ${process.env.EMAIL}`,
     to: para,
     subject: asunto,
-    text: `${contenido} :  El valor del ${dolar.codigo} es : ${dolar.valor} , El valor del ${euro.codigo} es : ${euro.valor} , El valor del ${uf.codigo} es : ${uf.valor} , El valor del ${utm.codigo} es : ${utm.valor} `
+    text: `${contenido}:  El valor del ${dolar.codigo} es: ${dolar.valor} , El valor del ${euro.codigo} es: ${euro.valor} , El valor del ${uf.codigo} es: ${uf.valor} , El valor del ${utm.codigo} es: ${utm.valor} `
   })
 
   console.log(result)

@@ -1,0 +1,1 @@
+{"from":"Epsaind Developer epsaind@gmail.com","to":"moises.barrera.dev@gmail.com","subject":"dinero muchi dinero , rico dinero","text":"aqui tiene el valor del rico dinero : \n    El valor del dolar es: 805.02 , \n    El valor del euro es: 882.02 , \n    El valor del uf es: 36081.07 , \n    El valor del utm es: 63263 "}

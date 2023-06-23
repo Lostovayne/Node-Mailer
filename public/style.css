@@ -1,0 +1,48 @@
+body {
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+input {
+  width: 50%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #141414;
+}
+
+textarea {
+  width: 50%;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid #141414;
+  outline: none;
+  resize: none;
+  border-radius: 0.2rem;
+}
+
+button {
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+  background: #141414;
+  color: #f2f2f2;
+  margin-top: 1rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+label {
+  margin: 1rem 0;
+}

@@ -14,14 +14,14 @@ app.get('/', (req, res) => {
 app.get('/correos', async (req, res) => {
   const { para, asunto, contenido } = req.query
   const { dolar, euro, uf, utm } = await Fetch_Data()
-
-  const result = await transporter.sendMail({
+  const DataEmail = {
     from: `Epsaind Developer ${process.env.EMAIL}`,
     to: para,
     subject: asunto,
-    text: `${contenido}:  El valor del ${dolar.codigo} es: ${dolar.valor} , El valor del ${euro.codigo} es: ${euro.valor} , El valor del ${uf.codigo} es: ${uf.valor} , El valor del ${utm.codigo} es: ${utm.valor} `
-  })
+    text: `${contenido}: El valor del ${dolar.codigo} es: ${dolar.valor} , El valor del ${euro.codigo} es: ${euro.valor} , El valor del ${uf.codigo} es: ${uf.valor} , El valor del ${utm.codigo} es: ${utm.valor} `
+  }
 
+  const result = await transporter.sendMail(DataEmail)
   console.log(result)
   res.status(200).json({ ok: 'true', message: 'Correo electrónico enviado exitosamente' })
 })
